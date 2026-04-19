@@ -5,7 +5,7 @@ public class Main {
     Scanner sc = new Scanner(System.in);
     int height = sc.nextInt();
     int weight = sc.nextInt();
-    double bmi = (10000 * weight) / height * height;
+    double bmi = (10000 * weight) / (height * height);
 
     if((int)bmi >= 25){
         System.out.printf("%d\nObesity",(int)bmi);
