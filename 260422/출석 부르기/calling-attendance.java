@@ -8,7 +8,7 @@ public class Main {
         System.out.print("John");
     }else if(n==2){
         System.out.print("Tom");
-    }else if(n==2){
+    }else if(n==3){
         System.out.print("Paul");
     }else{
         System.out.print("Vacancy");
