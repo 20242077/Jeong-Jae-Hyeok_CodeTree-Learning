@@ -5,7 +5,8 @@ public class Main {
         // Please write your code here.
     Scanner sc = new Scanner(System.in);
     int a = sc.nextInt(), b = sc.nextInt();
-    System.out.print(a < b ? "1 0":"0 1");
+    System.out.print(a < b ? "1 ":"0 ");
+    System.out.print(a == b ? "1":"0");
     sc.close();
     }
 }
