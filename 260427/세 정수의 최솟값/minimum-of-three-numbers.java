@@ -7,12 +7,10 @@ public class Main {
     int min = 0;
     if((a<=b)&&(a<=c)){
         min=a;
-    }else if((a<=b)&&(a>=c)){
-        min=c;
-    }else if((a>=b)&&(b>=c)){
-        min=c;
-    }else if((a>=b)&&(b<=c)){
+    }else if((b<=a)&&(b<=c)){
         min=b;
+    }else{
+        min=c;
     }
     System.out.print(min);
     sc.close();
