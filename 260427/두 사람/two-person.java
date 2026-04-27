@@ -11,6 +11,8 @@ public class Main {
     if((age1>=19)||(age2>=19)){
         if((gen1.equals("M"))||(gen2.equals("M"))){
             System.out.print(1);
+        }else{
+            System.out.print(0);
         }
     }else{
         System.out.print(0);
