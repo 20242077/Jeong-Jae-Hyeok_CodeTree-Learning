@@ -9,6 +9,7 @@ public class Main {
     if(scMath1 >= scMath2){
         if(scEng1>=scEng2){
             name = "A";
+        name = "A";
         }else{
             name = "B";
         }
