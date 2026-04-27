@@ -7,13 +7,8 @@ public class Main {
     String gen1 = sc.next();
     int age2 = sc.nextInt();
     String gen2 = sc.next();
-
-    if((age1>=19)||(age2>=19)){
-        if((gen1.equals("M"))||(gen2.equals("M"))){
-            System.out.print(1);
-        }else{
-            System.out.print(0);
-        }
+    if(( (age1>=19) || (age2>=19) )&&( gen1.equals("M") || gen2.equals("M") )){
+        System.out.print(1);
     }else{
         System.out.print(0);
     }
