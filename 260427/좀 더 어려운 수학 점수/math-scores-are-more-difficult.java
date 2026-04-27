@@ -5,18 +5,11 @@ public class Main {
     Scanner sc = new Scanner(System.in);
     int scMath1 = sc.nextInt(), scEng1 = sc.nextInt();
     int scMath2 = sc.nextInt(), scEng2 = sc.nextInt();
-    String name = "";
-    if(scMath1 >= scMath2){
-        if(scEng1>=scEng2){
-            name = "A";
-        name = "A";
-        }else{
-            name = "B";
-        }
+    if(scMath1==scMath2){
+        System.out.print(scEng1>scEng2?"A":"B");
     }else{
-        name = "B";
+        System.out.print(scMath1>scMath2?"A":"B");
     }
-    System.out.print(name);
     sc.close();
     }
 }
