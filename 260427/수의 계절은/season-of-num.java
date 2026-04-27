@@ -15,6 +15,6 @@ public class Main {
         s = "Winter";
     }
     System.out.print(s);
-    sc.close;
+    sc.close();
     }
 }
