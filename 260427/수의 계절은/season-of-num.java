@@ -9,12 +9,12 @@ public class Main {
         s = "Spring";
     }else if((m>=6)&&(m<=8)){
         s = "Summer";
-    }else if((m>=9)&&(m<=111)){
+    }else if((m>=9)&&(m<=11)){
         s = "Fall";
     }else{
         s = "Winter";
     }
     System.out.print(s);
-    sc.close();
+    sc.close;
     }
 }
