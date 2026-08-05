@@ -5,6 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[10];
         int sum = 0;
+        int count = 0;
         float avg = 0;
         for(int i = 0; i<10; i++){
             arr[i] = sc.nextInt();
@@ -12,8 +13,9 @@ public class Main {
                 break;
             }
             sum += arr[i];
-            avg = (float) sum / (i+1) ;
+            count ++;
         }
+        avg = (float) sum / count ;
         System.out.printf("%d %.1f",sum,avg);
     }
 }
