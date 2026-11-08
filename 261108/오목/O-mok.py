@@ -1,3 +1,4 @@
+import sys
 board = [list(map(int, input().split())) for _ in range(19)]
 
 def check(x, y) :
@@ -23,16 +24,8 @@ for i in range(19) :
                         win = False
                         break
                 else :
-                    wx, wy = i+dx*2, j+dy*2
-                    break
-        if win :
-            break
-    if win :
-        break
+                    print(color)
+                    print(i+dx*2+1, j+dy*2+1)
+                    sys.exit()
 
-if wx == 0 and wy == 0 :
-    print(0)
-else :
-    print(color)
-    print(wx+1, wy+1)
-    
+print(0)
