@@ -7,13 +7,12 @@ cx, cy = x[0], y[0]
 minDist = float('inf')
 for i in range(1, n-1) : # 건너뛸 체크포인트
     dist = 0
-    for j in range(n-1) :
+    prev = 0
+    for j in range(1, n) :
         if i == j :
             continue
-        elif i == j+1 :
-            dist += abs(x[j+2] - x[j]) + abs(y[j+2] - y[j])
-        else :
-            dist += abs(x[j+1] - x[j]) + abs(y[j+1] - y[j])
+        dist += abs(x[j]-x[prev]) + abs(y[j]-y[prev])
+        prev = j # 인덱스 건너뛰기
     minDist = min(dist, minDist)
 
 print(minDist)
